@@ -4,25 +4,41 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="google-signin-client_id" content="593808476530-9b04sre384t6iu55dfoirel70a7caegu.apps.googleusercontent.com">
   <title>eMercado - Todo lo que busques está aquí</title>
   
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <!-- Bootstrap css for login-->
+  <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <style>
     body {
       background-color: rgb(248, 249, 250);
     }
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
-  <main class="mt-5">
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
-    </div>
+  <main class="form-signin text-center">
+      <form id="formLogin">
+        <img class="loginimg mb-2" src="img/login.png" alt="e-mercado">
+        <h1 class="mb-2">Inicio de sesión</h1>
+        <h5 class="mb-1">Email</h5>
+        <div class="form-floating mb-2">
+          <input id="floatingInput" class="form-control" type="email" placeholder="name@example.com" required>
+          <label for="floatingInput">Email</label>
+        </div>
+        <h5 class="mb-1">Contraseña</h5>
+        <div class="form-floating mb-2">
+          <input id="floatingPassword" class="form-control" type="password" placeholder="Contraseña" required>
+          <label for="floatingPassword">Contraseña</label>
+        </div>
+        <button id="btn" type="submit">Ingresar</button>
+        <div id="my-signin2"></div>
+      </form>
+
   </main>
   <footer class="text-muted">
     <div class="container">
@@ -35,6 +51,7 @@
     </div>
   </footer>
   <script src="js/login.js"></script>
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </body>
 
 </html>

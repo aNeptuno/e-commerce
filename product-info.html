@@ -10,6 +10,10 @@
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Font Awesome Icon Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 </head>
 
 <body>
@@ -30,17 +34,40 @@
           <li class="nav-item">
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="usuarioMail">
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <main>
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
+    <div class="container" id="product-container"></div>
+    <div class="container comentary" id="comentary">
+      <h2 class="productCom">Comentarios</h2>
+    </div>
+    <div class="container comentary">
+      <h2 class="productCom">Comentar</h2>
+      <form action="">
+        <p><label for="prodReview">Tu opinión:</label></p>
+        <textarea id="prodReview" name="prodReview" class="form-control"></textarea>
+
+        <p><label for="score">Puntuacion:</label></p>
+        <select name="score" id="score" class="custom-select form-select d-block">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+
+        <p><input type="submit" value="Enviar" id="comBtn"></p>
+      </form>
+      <hr>
+    </div> 
+
+    <div class="container comentary" id="relProd">
+      <h2 class="productCom">Productos relacionados</h2>
+      <ul id="relProdList"></ul>
     </div>
   </main>
   <footer class="text-muted">

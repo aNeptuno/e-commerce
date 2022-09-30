@@ -37,8 +37,10 @@ function sortCategories(criteria, array){
 
 function setCatID(id) {
     localStorage.setItem("catID", id);
-    window.location = "products.html"
+    //localStorage.setItem("catName", name); al final no era necesario pero si quisiera, tengo que agregar parametro '${category.name}' a la funcion setCatID
+    window.location = "products.html";
 }
+
 
 function showCategoriesList(){
 

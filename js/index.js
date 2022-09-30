@@ -11,4 +11,10 @@ document.addEventListener("DOMContentLoaded", function(){
         localStorage.setItem("catID", 103);
         window.location = "products.html"
     });
+
+    //Si no está logueado, redirige al login
+    let email = localStorage.getItem('emailUsuario');
+    if (email===null) {
+        window.location = "login.html"
+    }
 });
