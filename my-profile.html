@@ -50,21 +50,102 @@
       </div>
     </div>
   </nav>
+
   <main>
     <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
+      <div class="profile-header p-4">
+          <h1 class="text-muted">Perfil</h1>
+          <div id="img-preview">
+            <img src="img/img_perfil.png" class="profile-img hide" id="img-default"></img> 
+          </div>
       </div>
+
+      <hr class="mb-4">
+
+      <form class="row mt-4 needs-validation" name="form-profile" novalidate>
+
+        <div class="row">
+
+          <div class="col-md-6 mb-3">
+            <label for="userName" class="form-label">Primer nombre*</label>
+            <input type="text" class="form-control" id="userName" name="userName" aria-describedby="validationNameFeedback" required>
+            <div class="invalid-feedback" id="validationNameFeedback">
+              Ingrese un nombre
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="userName" class="form-label">Segundo nombre</label>
+            <input type="text" class="form-control" id="userName2" name="userName2">
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-6 mb-3">
+            <label for="userSurname" class="form-label">Primer apellido*</label>
+            <input type="text" class="form-control" id="userSurname" name="userSurname" aria-describedby="validationSurnameFeedback" required>
+            <div class="invalid-feedback" id="validationSurnameFeedback">
+              Ingrese un apellido
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="userSurname2" class="form-label">Segundo apellido</label>
+            <input type="text" class="form-control" id="userSurname2" name="userSurname2">
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-6 mb-3">
+            <label for="userEmail" class="form-label">E-mail</label>
+            <input type="text" class="form-control" id="userEmail" name="userEmail">
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="userImg" class="form-label">Imágen de perfil</label>
+            <div class="input-group">
+              <input type="file" class="form-control" accept="image/*" id="userImg" name="userImg" />
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-6 mb-3">
+            <label for="userPhone" class="form-label">Teléfono de contacto*</label>
+            <input type="text" class="form-control" id="userPhone" name="userPhone" aria-describedby="validationPhoneFeedback" required>
+            <div class="invalid-feedback" id="validationPhoneFeedback">
+              Ingrese un número
+            </div>
+          </div>
+
+        </div>
+
+        <hr class="mb-4">
+        <div class="col-md-6 mb-3">
+          <button class="btn btn-primary btn-lg profile-btn" type="submit">Guardar cambios</button>
+        </div>
+        
+      </form>
+
+
+
+
     </div>
   </main>
+
   <footer class="text-muted">
     <div class="container">
       <p class="float-end">
-        <a href="#">Volver arriba</a>
+        <a href="#" class="linkBlack">Volver arriba</a>
       </p>
-      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a> -
-        2022</p>
-      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+      <p>Este sitio forma parte de <a class="linkBlack" href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a> -
+        2022 - Alex N. Diban</p>
     </div>
   </footer>
   <script src="js/bootstrap.bundle.min.js"></script>

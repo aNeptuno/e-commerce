@@ -99,12 +99,10 @@ document.addEventListener("DOMContentLoaded", function(e){
 
     getJSONData(PRODUCT_URL).then(function(resultObj){
         if (resultObj.status === "ok"){
-            //En este caso resultObj.data no devuelve un array, sino un registro
             currentProductsRegistry = resultObj.data;
             currentProductsArray = currentProductsRegistry.products; 
             showProductsList();
             parrafo();
-            //sortAndShowProducts(ORDER_ASC_BY_NAME, resultObj.data);
         }
     });
 
@@ -153,12 +151,14 @@ document.addEventListener("DOMContentLoaded", function(e){
     });
 });
 
-let searchBtn = document.getElementById("search-btn");
-searchBtn.addEventListener('click', function(evento) {
-    evento.preventDefault();
+
+let searchInput = document.getElementById('mySearch');
+searchInput.addEventListener('input', function(e) {
+    e.preventDefault();
     let searchTerms = document.getElementById("mySearch").value.toUpperCase();
     filterWithSearchTerms(searchTerms);
 });
+
 
 function filterWithSearchTerms(searchTerms){
 
