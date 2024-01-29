@@ -1,7 +1,7 @@
 
-# e-commerce Website
+# e-Commerce Website
 
-🚀👩‍💻🔧 <a href="https://jovenesaprogramar.edu.uy/">Jóvenes a programar</a> 2022 Final Project. 🚀👩‍💻🔧
+<a href="https://jovenesaprogramar.edu.uy/">Jóvenes a programar</a> 2022 Final Project 🚀👩‍💻
 
 ## Features
 - **Developed with Javascript ⚙️, NodeJS 🚀, Express 🛣️**
